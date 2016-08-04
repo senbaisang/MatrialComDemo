@@ -2,7 +2,6 @@ package com.sally.matrialcomdemo.component;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.BottomBarBadge;
@@ -10,6 +9,7 @@ import com.roughike.bottombar.BottomBarFragment;
 import com.roughike.bottombar.OnTabSelectedListener;
 import com.sally.matrialcomdemo.R;
 import com.sally.matrialcomdemo.fragment.SampleFragment;
+import com.sally.matrialcomdemo.util.Utils;
 
 /**
  * Created by sally on 8/4/16.
@@ -40,16 +40,16 @@ public class BottomButtonFragmentActivity extends AppCompatActivity {
             public void onItemSelected(int position) {
                 switch (position) {
                     case 0:
-                        showMsg("hei");
+                        Utils.showMsg(BottomButtonFragmentActivity.this, "hei");
                         break;
                     case 1:
-                        showMsg("ha");
+                        Utils.showMsg(BottomButtonFragmentActivity.this, "ha");
                         break;
                     case 2:
-                        showMsg("hei");
+                        Utils.showMsg(BottomButtonFragmentActivity.this, "hei");
                         break;
                     case 3:
-                        showMsg("ha");
+                        Utils.showMsg(BottomButtonFragmentActivity.this, "ha");
                         break;
                 }
             }
@@ -61,7 +61,4 @@ public class BottomButtonFragmentActivity extends AppCompatActivity {
 
     }
 
-    private void showMsg(String text) {
-        Toast.makeText(BottomButtonFragmentActivity.this, text, Toast.LENGTH_SHORT).show();
-    }
 }

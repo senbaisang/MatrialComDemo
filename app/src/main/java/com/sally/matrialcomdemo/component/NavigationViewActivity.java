@@ -16,6 +16,7 @@ import com.sally.matrialcomdemo.fragment.DiscussionFragment;
 import com.sally.matrialcomdemo.fragment.FriendFragment;
 import com.sally.matrialcomdemo.fragment.HomeFragment;
 import com.sally.matrialcomdemo.fragment.MessageFragment;
+import com.sally.matrialcomdemo.util.Utils;
 
 
 /**
@@ -84,10 +85,10 @@ public class NavigationViewActivity extends AppCompatActivity {
                         mToolbar.setTitle(R.string.nav_discussion);
                         break;
                     case R.id.nav_stub_item1:
-                        showMsg("nav_stub_item1");
+                        Utils.showMsg(NavigationViewActivity.this, "nav_stub_item1");
                         break;
                     case R.id.nav_stub_item2:
-                        showMsg("nav_stub_item2");
+                        Utils.showMsg(NavigationViewActivity.this, "nav_stub_item2");
                         break;
                 }
 
@@ -111,7 +112,4 @@ public class NavigationViewActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void showMsg(String text) {
-        Toast.makeText(NavigationViewActivity.this, text, Toast.LENGTH_SHORT).show();
-    }
 }

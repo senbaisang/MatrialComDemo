@@ -9,6 +9,7 @@ import com.roughike.bottombar.BottomBarFragment;
 import com.roughike.bottombar.OnMenuTabSelectedListener;
 import com.sally.matrialcomdemo.R;
 import com.sally.matrialcomdemo.fragment.SampleFragment;
+import com.sally.matrialcomdemo.util.Utils;
 
 /**
  * Created by sally on 8/4/16.
@@ -30,23 +31,20 @@ public class BottomButtonActivity extends AppCompatActivity {
             public void onMenuItemSelected(int menuItemId) {
                 switch (menuItemId) {
                     case R.id.bottom_home:
-                        showMsg("home");
+                        Utils.showMsg(BottomButtonActivity.this, "home");
                         break;
                     case R.id.bottom_messages:
-                        showMsg("message");
+                        Utils.showMsg(BottomButtonActivity.this, "message");
                         break;
                     case R.id.bottom_discussion:
-                        showMsg("discussion");
+                        Utils.showMsg(BottomButtonActivity.this, "discussion");
                         break;
                     case R.id.bottom_friend:
-                        showMsg("friend");
+                        Utils.showMsg(BottomButtonActivity.this, "friend");
                         break;
                 }
             }
         });
     }
 
-    private void showMsg(String text) {
-        Toast.makeText(BottomButtonActivity.this, text, Toast.LENGTH_SHORT).show();
-    }
 }
