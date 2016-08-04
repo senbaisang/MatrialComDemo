@@ -18,6 +18,10 @@
         <activity android:name=".component.CardViewActivity" />
         <activity android:name=".component.TabLayoutActivity" />
         <activity android:name=".component.NavigationViewActivity" android:theme="@style/Theme.DesignDemo"/>
+        <activity android:name=".component.RecyclerViewActivity" android:theme="@style/Theme.DesignDemo"/>
+        <activity android:name=".component.EditTextAndDialogActivity" />
+        <activity android:name=".component.BottomButtonActivity" />
+        <activity android:name=".component.BottomButtonFragmentActivity" />
     </application>
 
 </manifest>

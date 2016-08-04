@@ -31,4 +31,32 @@
         android:text="navigationView"
         android:gravity="center"/>
 
+    <Button
+        android:id="@+id/id_recycler_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="recyclerView"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/id_edit_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="see see"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/id_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bottom_button"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/id_bottom_button_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bottom_button_fragment"
+        android:gravity="center"/>
+
 </LinearLayout>

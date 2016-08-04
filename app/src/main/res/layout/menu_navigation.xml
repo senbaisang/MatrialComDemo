@@ -32,11 +32,13 @@
         <menu>
 
             <item
+                android:id="@+id/nav_stub_item1"
                 android:checkable="true"
                 android:icon="@drawable/ic_update_white_24dp"
                 android:title="sub item1" />
 
             <item
+                android:id="@+id/nav_stub_item2"
                 android:checkable="true"
                 android:icon="@drawable/ic_update_white_24dp"
                 android:title="sub item2" />

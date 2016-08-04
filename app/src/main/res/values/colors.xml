@@ -15,4 +15,5 @@
     <color name="black">#000000</color>
     <color name="light_black1">#88000000</color>
     <color name="light_black2">#55000000</color>
+    <color name="bottom_button_color">#C2185B</color>
 </resources>
